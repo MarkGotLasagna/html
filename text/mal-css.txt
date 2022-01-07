@@ -1,0 +1,79 @@
+/* 
+  CUSTOM CSS STYLE
+  Original from: MarkGotLasagna
+  On: github.com/MarkGotLasagna/html/txt/mal-css.txt
+*/
+
+/* these are global variables */
+:root {
+  --rainbow: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  --bluehue: repeating-linear-gradient(-45deg, cyan 0%, blue, magenta, cyan 50%);
+}
+
+/* the username shown in the top right corner */
+.username {
+    background: var(--bluehue);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    /* leave for compatibility */
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+.list-container {
+  background-color: black;
+  border: black;
+}
+
+.status-menu-container {
+  background-color: black;
+  border-bottom: black;
+}
+
+.status-menu-container .status-menu .status-button.on::after, .status-menu .status-button:hover::after {
+    opacity: 1;
+    background-color: white;
+}
+
+/* these two set the table color */
+.list-table {
+  background-color: white;
+}
+/*
+.list-table > tbody:nth-of-type(2n+1) {
+  background-color: black;
+}
+*/
+
+#footer-block {
+  background-color: black;
+}
+
+/* this is the top bar*/
+.list-unit .list-status-title .text {
+  background-color: black;
+}
+
+.status-menu-container .status-menu .status-button:after {
+  background-color: white;
+}
+
+/* this sets the linear gradient rainbow effect */
+.status-menu {
+  background: var(--rainbow);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+/* this enables animation on the linear gradients */
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
