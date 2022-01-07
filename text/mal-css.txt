@@ -1,7 +1,7 @@
 /* 
   CUSTOM CSS STYLE
   Original from: MarkGotLasagna
-  On: github.com/MarkGotLasagna/html/txt/mal-css.txt
+  On: https://github.com/MarkGotLasagna/html/blob/master/text/mal-css.txt
 */
 
 /* these are global variables */
