@@ -1,0 +1,10 @@
+Removing file extensions from URIs, such as .html or .php, is as simple 
+as adding a directive into the "location /" of the server. 
+The code only operates on external URIs that are visible to the user.
+
+location / {
+    if ($request_uri ~ ^/(.*)\.html) {
+        return 302 /$1;
+    }
+    try_files $uri $uri.html $uri/ =404;
+}

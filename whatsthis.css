@@ -1,0 +1,12 @@
+.tutto {
+    font-family: system-ui;
+    font-style: normal;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    position: absolute;
+}
+
+#name {
+    font-size: 50px;
+}
