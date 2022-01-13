@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng" dir="ltr">
+<script type="text/javascript" src="/orderlist.js"></script>
+
 <a onclick="history.back()">
     << back</a>
 
@@ -16,11 +18,14 @@
                 This place holds all references to pages I upload.<br> Every time I <i>learn something</i> that is worth to be noted, I <i>create a new page and a link to it</i>, so that you can check it out.<br> By <i>learn something</i> I don't necessarily
                 mean CS related, it could be anything.<br>
             </p>
+            <button onclick="sortList()" id="button">Sort</button>
             <dl>
-                <dt>nginx</dl>
-                <ul>
+                <dt>PATH: /text</dt>
+                <ul id="ul1">
                     <li><a href="/text/uri-ext-remove.txt">Removing file extension from URIs</a></li>
-                </ul>
-        </dl>
-    </body>
+                    <li><a href="/text/mal-css.txt">MyAnimeList</a></li>
+                    <li><a href="/text/deprecated-scripts.txt">Deprecated scripts</a></li>
+            </dl>
+        </body>
+
 </html>

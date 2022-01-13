@@ -1,3 +1,12 @@
+body {
+    font-family: system-ui;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .whole {
     background-color: black;
 }
@@ -12,6 +21,12 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+#h23 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #fi {
